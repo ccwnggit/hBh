@@ -1,0 +1,1 @@
+The audience is the public potential customers interested in owning a home.They are either attracted to the site from instagram or other advertisements. 
