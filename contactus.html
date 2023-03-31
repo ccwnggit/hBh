@@ -8,11 +8,74 @@
     <title>HBH Properties</title>
     <style>
         main {
-        background-color: rgb(83, 115, 182);
+        background-color: white;
         }
         .forms {
         font-size:1.5em;
         color: rgb(224, 191, 125);
+        }
+        /* for the form */
+        form {
+            width: 60%;
+            margin: 0 auto;
+            padding: 1em;
+            font-size: 1.2em;
+            border: 2px solid black;
+            border-radius: 1em;
+            
+        }
+
+        
+
+        label {
+            /* Uniform size & alignment */
+            display: inline-flex;
+            width: 30%;
+            text-align: left;
+            
+        }
+        input, textarea {
+            font: 1em sans-serif;
+            /* Uniform text field size */
+            width: 50%;
+            box-sizing: border-box;
+            
+            /* Match form field borders */
+            border: 1px solid #999;
+        }
+
+        input:focus, textarea:focus {
+            /*Additional highlight for focused elements */
+            border-color: #000;
+        }
+
+        textarea {
+            /* Align multiline text fields with their labels */
+            vertical-align: top;
+            /* Provide space to type some text */
+            height: 6em;
+        }
+
+        button1 {
+            padding-left: 90px;
+            margin-left: 120px;
+            border: 2px solid black;
+            
+        }
+
+        #feedback {
+            background-color: antiquewhite;
+            position: absolute;
+            top: 0;
+            left:0;
+            right:0;
+            padding: .5em;
+            /* make this element invisible until we are ready for it */
+            display: none;
+        }
+        
+        .moveDown {
+            margin-top: 3em;
         }
 
     </style>
