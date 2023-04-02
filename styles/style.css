@@ -8,7 +8,7 @@ Fonts are separated by a | */
   --primary-color: #cdb953   ;
   --secondary-color: #e8cc77 ;
   --accent1-color: #6292BC;
-  --accent2-color: white;
+  --accent2-color: #381d2a;
 
   /* change the values below to your chosen font(s) */
   --heading-font: Verdana;
@@ -84,12 +84,12 @@ footer {
 }
 
 footer a {
-    color:#d9c2a3;
+    color:#cdb953;
     text-decoration: none;
 }
 
 footer a:hover {
-    color:#d9c2a3;
+    color:#6292BC;
 }
 
 footer p {
