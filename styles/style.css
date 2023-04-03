@@ -17,8 +17,8 @@ Fonts are separated by a | */
 
   /* these colors below should be chosen from among your palette colors above */
 --headline-color-on-white: #6292BC;  /* headlines on a white background */ 
---headline-color-on-color: white; /* headlines on a colored background */ 
---paragraph-color-on-white: #6292BC; /* paragraph text on a white background */ 
+--headline-color-on-color: #6292BC; /* headlines on a colored background */ 
+--paragraph-color-on-white: black; /* paragraph text on a white background */ 
 --paragraph-color-on-color: white; /* paragraph text on a colored background */ 
 --paragraph-background-color: #6292BC  ;
 --nav-link-color: #6292BC;
@@ -34,14 +34,22 @@ header {
     color: var(--headline-color-on-color);
     background-color: var(--paragraph-background-color);
 }
+
+
 header > h1, header > h2 {
     color: var(--headline-color-on-color);
 }
 
+header nav, footer {
+    font-size:1.1em;
+    color:blue;
+}
+
+
 p {
     font-family: var(--paragraph-font);
     color: var(--paragraph-color-on-white);
-    padding: 1em;
+    padding: 0.05em;
 }
 
 
@@ -101,11 +109,12 @@ footer a {
 }
 
 footer a:hover {
-    color:#6292BC;
+    color: var(--accent2-color);
 }
 
 footer p {
     font-size: 1.2em;
+
 }
 
 footer p a:hover{
@@ -171,25 +180,20 @@ h1 {
     color: var(--headline-color-on-white);
 }
 
-}
 
 h2 {
     margin:0;
     color: #fcfbfb
 }
 
-h4 {
-    color:black;
-    
-}
 
 header {
     display: grid;
-    grid-template-columns: 160px auto;
-    
+    grid-template-columns: 150px auto;
     background-color:#e8cc77 ;
-    background-color:#cdb953 ;
     background-color: #6292BC;
+    background-color:#cdb953 ;
+    
 }
 
 
@@ -241,8 +245,7 @@ main section img {
 
 
 .logo {
-    width: 110px;
-    padding-top: 5px;
+    width: 150px;
     border-radius: 5em;
 
 }
@@ -285,12 +288,12 @@ nav a:hover {
     background-color:#e8cc77;
 }
 footer p a{
-    color: white;
+    color: var(--accent2-color);
 
 }
 
 footer p {
-    color: white;
+    color: var(--accent2-color);;
     font-size: 1em;
 }
 .gallery {
@@ -330,6 +333,10 @@ footer p {
     
 }
 
+header nav a {
+    color: var(--accent2-color);
+    
+}
 
 @media screen and (max-width: 900px) {
     #hero, .home-grid {
