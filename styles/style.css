@@ -12,12 +12,12 @@ Fonts are separated by a | */
 --accent2-color: #381d2a;
 
   /* change the values below to your chosen font(s) */
---heading-font: "Rock Salt";
+--heading-font: Geneva;
 --paragraph-font: Verdana, Helvetica, sans-serif;
 
   /* these colors below should be chosen from among your palette colors above */
 --headline-color-on-white: #6292BC;  /* headlines on a white background */ 
---headline-color-on-color: #6292BC; /* headlines on a colored background */ 
+--headline-color-on-color: var(--accent2-color) ; /* headlines on a colored background */ 
 --paragraph-color-on-white: black; /* paragraph text on a white background */ 
 --paragraph-color-on-color: white; /* paragraph text on a colored background */ 
 --paragraph-background-color: #6292BC  ;
@@ -33,16 +33,6 @@ header {
     text-align: center;
     color: var(--headline-color-on-color);
     background-color: var(--paragraph-background-color);
-}
-
-
-header > h1, header > h2 {
-    color: var(--headline-color-on-color);
-}
-
-header nav, footer {
-    font-size:1.1em;
-    color:blue;
 }
 
 
@@ -112,15 +102,11 @@ footer a:hover {
     color: var(--accent2-color);
 }
 
-footer p {
+footer {
     font-size: 1.2em;
-
 }
 
-footer p a:hover{
 
-    text-decoration: underline;
-}
 
 footer .social img {
     padding-top:15px;
@@ -196,6 +182,10 @@ header {
     
 }
 
+header nav a {
+    color: var(--accent2-color);
+    font-size: 1.2em;
+}
 
 .icon {
     width: 80px;
@@ -292,15 +282,25 @@ footer p a{
 
 }
 
-footer p {
+footer {
     color: var(--accent2-color);;
-    font-size: 1em;
+    
 }
+
+footer nav a {
+    color: var(--accent2-color);;
+   
+}
+
+footer nav a: hover {
+    background-color: black;
+}
+
 .gallery {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 2px;
-    
+
 }
 
 .home-image, .other-home-photos{
@@ -330,11 +330,6 @@ footer p {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 10px;
-    
-}
-
-header nav a {
-    color: var(--accent2-color);
     
 }
 
