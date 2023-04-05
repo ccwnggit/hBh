@@ -283,16 +283,16 @@ footer p a{
 }
 
 footer {
-    color: var(--accent2-color);;
+    color: var(--accent2-color);
     
 }
 
 footer nav a {
-    color: var(--accent2-color);;
+    color: var(--accent2-color);
    
 }
 
-footer nav a: hover {
+footer nav a:hover {
     background-color: black;
 }
 
@@ -333,12 +333,22 @@ footer nav a: hover {
     
 }
 
+.property-container {
+    background-color: #cdb953;
+    background-color: #6292BC;
+}
+
 @media screen and (max-width: 900px) {
     #hero, .home-grid {
         display: block;
         height: auto;
     }
 
+    .column {
+        -ms-flex: 50%;
+        flex:50%;
+        max-width: 50%;
+    }
     nav, footer {
         flex-direction: column;
 
