@@ -35,6 +35,7 @@ body {
   padding: 4em;
   font-size: 24px;
   text-align: center;
+  border: 2px solid green
 }
 img {
   display: block;
@@ -129,7 +130,6 @@ nav a:hover {
 .sitemap {
   display: grid;
   justify-content: center;
-
   grid-template-columns: repeat(6, 15%);
   grid-template-rows: 3em 1.5em 1.5em 3em;
   grid-template-areas: ". . home home . ."
